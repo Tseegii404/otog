@@ -1,4 +1,101 @@
 @import ./helper
 
 .table
-    color: $primary-color
+    color: $bg-white
+
+.contain 
+    display: flex
+    +t
+        display: inline
+    justify-content: space-between
+    background-color: $bg-footer
+.con 
+     width: 70%
+     height: 100% 
+     position: absolute
+.backgroundImage
+    z-index: 0
+    left: 0
+    top: 0
+    position: fixed
+    +t
+        top: 0
+        +m
+            top: 0
+
+.image
+    width: 100%
+
+.main
+    z-index: 1
+    width: 100%
+    height: 100%
+    position: absolute
+
+.button
+    height: 71px
+    width: 207px
+    border-radius: 10px
+    border: 0
+    background-color: $primary-color
+
+.buttonText
+    color: $bg-white
+    +roboto
+.font
+    color: $text-black
+    font-size: 18px
+    text-decoration: none
+    +roboto
+.display
+    display: inline
+
+.BgImage
+    width: 100%
+    height: 100%
+
+.hearth
+    background-color: $primary-color
+    width: 24px
+    height: 24px
+    +center
+    color: $bg-white
+    border-radius: 100px
+    +roboto
+    position: absolute
+    margin-left: 20px
+    z-index: 1
+    font-size: 12px
+    
+.grid1
+    background-color: $primary-color
+.grid2
+    padding-top: 30px
+    width: 30%
+    height: 100%
+
+.tab
+    background-color: pink
+    display: flex
+    justify-content: space-between
+
+.guch
+    padding-top: 10px
+
+.search
+    +center
+    width: 80%
+    height: 83px
+    border-radius: 10px
+    border: 1
+    border-color: $text-black
+    background-color: $bg-footer
+
+.searchCenter
+    +center
+    padding-top: 30px
+.input
+    border: 0
+.centerl
+    padding-right: 20px
+    padding-left: 20px

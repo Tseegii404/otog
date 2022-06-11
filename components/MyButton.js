@@ -5,7 +5,7 @@ import css from '@styles/example.module.sass';
 const MyButton=({label, onClick})=> {
     return (
         <button onClick={onClick} className={css.button}>
-            <p>{label}</p>
+            <p className={css.buttonText}>{label}</p>
         </button>
     );
 }
