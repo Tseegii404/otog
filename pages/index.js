@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 import Header from './Header'
 import Image from 'next/image';
 import logoWith from '../public/logowithbg.svg'
+import css from '@styles/example.module.sass'
+import MyButton from '@components/MyButton';
 
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
         <title>OTOG</title>
       </Head>
      <div className={styles.contain}>
-       <div
+      <div
         className={styles.cover}
       >
         <Image
@@ -29,9 +31,9 @@ export default function Home() {
           width={207}
           height={183}
         />
-        <h1>The Best Outdoor Accessories</h1>
+        <h1 className={css.table}>The Best Outdoor Accessories</h1>
         <p>Discover the most unique places, experiencesand azaming homes around the world</p>
-        <button type="button" class="btn btn-warning">Primary</button>
+        <MyButton label={"hahah"}/>
       </div>
      </div>
     </div>

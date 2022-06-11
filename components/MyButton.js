@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
+import css from '@styles/example.module.sass';
 
-const button=({label, onClick})=> {
+const MyButton=({label, onClick})=> {
     return (
-        <button onClick={onClick}>
+        <button onClick={onClick} className={css.button}>
             <p>{label}</p>
         </button>
     );
 }
 
-export default button;
+export default MyButton;
