@@ -1,10 +1,5 @@
-import React from 'react';  
-const Header = () => {
-    return ( 
-    <div>
-        <h1>Header</h1>
-        <p>lorem</p>
-    </div> );
-}
- 
+import React from 'react';
+const Header = ({ title }) => {
+    return <h1>{title ? title : 'Default title'}</h1>;
+  }
 export default Header;
