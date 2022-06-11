@@ -1,3 +1,21 @@
 .container {
   padding: 0;
 }
+.contain {
+  background-color: #FFFFFF;
+}
+.cover {
+  background-image: url('../public/cover.svg');
+  width: 25cm;
+  height: 20cm;
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  resize: inherit;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.button{
+  height: 71px;
+  width: 207px;
+  border-radius: 10px;
+}

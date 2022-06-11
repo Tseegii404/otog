@@ -3,7 +3,8 @@ import Link from 'next/link';
 import React, {useState} from 'react';
 import styles from '../styles/Home.module.css'
 import Header from './Header'
-import Img from '../public/cover.jpg'
+import Image from 'next/image';
+import logoWith from '../public/logowithbg.svg'
 
 
 export default function Home() {
@@ -17,15 +18,22 @@ export default function Home() {
       <Head>
         <title>OTOG</title>
       </Head>
-      <div
-        style={{
-          backgroundImage: "url(" + `${require("../public/cover.jpg")}` + ")",
-          width: "100%",
-          height:"100%",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-      >XXX</div>
+     <div className={styles.contain}>
+       <div
+        className={styles.cover}
+      >
+        <Image
+          style={{backGroundColor: '#000'}}
+          src={logoWith}
+          alt="Picture of the author"
+          width={207}
+          height={183}
+        />
+        <h1>The Best Outdoor Accessories</h1>
+        <p>Discover the most unique places, experiencesand azaming homes around the world</p>
+        <button type="button" class="btn btn-warning">Primary</button>
+      </div>
+     </div>
     </div>
   )
 }
