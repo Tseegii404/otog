@@ -13,7 +13,6 @@ function Tumbnail() {
           src={tumbnail}
           alt="tumbnail"
           height="117px"
-          objectFit="cover"
         />
       </div>
       <div
@@ -26,16 +25,13 @@ function Tumbnail() {
         <div>
           <p>Отор 300 майхан</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Image src={playbtn} alt="tumbnail" width="33px" height="33px" />
-          <p>Дэлгэрэнгүй үзэх</p>
+        <div className={css.more}>
+          <div>
+            <Image src={playbtn} alt="tumbnail" width="33px" height="33px" />
+          </div>
+          <div>
+            <p>Дэлгэрэнгүй үзэх</p>
+          </div>
         </div>
       </div>
     </div>
