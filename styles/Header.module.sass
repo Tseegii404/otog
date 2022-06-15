@@ -1,0 +1,51 @@
+@import ./helper
+
+.container
+    margin: 0 160px
+    box-shadow: 0px 4px 2px -2px $bg-gray0
+
+.row1
+    +roboto
+    color: $text-black
+    display: flex
+    justify-content: space-between
+    margin: 20px 0
+    .mediaImageWrapper
+        margin-right: 36px
+        cursor: pointer
+    .rigth
+        display: flex
+        align-items: center
+    .iconWrapper
+        display: flex
+        justify-content: center
+        align-items: center
+
+.row2
+    +roboto
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.menuContainer
+    display: flex
+    align-items: center
+    justify-content: center
+    ul
+        list-style: none
+        display: flex
+        margin: 0
+        +roboto
+        li
+            margin-left: 36px
+            a
+                text-decoration: none
+                color: $text-black
+                
+.user
+    display: flex
+    justify-content: space-between
+    align-items: center
+    >span
+        margin: 16px
+        cursor: pointer
