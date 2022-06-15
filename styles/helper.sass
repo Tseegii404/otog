@@ -20,11 +20,16 @@ $primary-color: #FF7E2E
 $text-white: #FAFAFA
 $text-black: #383838
 $text-gray: #A7A7A7
+$text-search-gray: #686F75
 $bg-white: #FFFFFF
+$bg-gray: #F8F9FA
 $bg-gray0: #F8F8F8
 $bg-gray1: #D3D3D3
 $bg-gray2: rgba(0, 0, 0, 0.6)
+$bg-gray3: #EFEFEF
 $bg-footer: rgba(0, 0, 0, 0.06)
+
+
 
 // media queries
 =t
@@ -33,6 +38,7 @@ $bg-footer: rgba(0, 0, 0, 0.06)
 =m
     @media only screen and (max-width: "512px")
         @content
+
 
 // font-families
 =roboto
@@ -44,6 +50,9 @@ $bg-footer: rgba(0, 0, 0, 0.06)
     align-items: center
     display: flex
 
+=mgver
+    margin-top: 98px
+    margin-bottom: 86px
 .dt
     width: 1500px
     background: $primary-color

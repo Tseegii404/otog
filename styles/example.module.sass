@@ -1,18 +1,44 @@
 @import ./helper
 
+.mgver
+    margin-top: 26px
+    margin-bottom: 37.5px
+.column
+    margin-top: 30px
+    display: flex
+    flex-direction: column
+    align-content: center
+    justify-content: space-between
+    height: 100px
+.center 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.row
+    display: flex
+    flex-direction: row
+.col 
+    align-items: flex-end
 .table
     color: $bg-white
+    padding-top: 30px
+    padding-bottom: 30px
 
 .contain 
     display: flex
+    flex-direction: row
     +t
-        display: inline
+        flex-direction: column
     justify-content: space-between
-    background-color: $bg-footer
+    background-color: $bg-gray
+    height: 100%
 .con 
      width: 70%
      height: 100% 
      position: absolute
+    
 .backgroundImage
     z-index: 0
     left: 0
@@ -28,9 +54,17 @@
 
 .main
     z-index: 1
-    width: 100%
-    height: 100%
     position: absolute
+    height: 100%
+    
+.bg
+    // background-color: pink
+    height: 50%
+    padding: 50px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    // align-items: flex-end
 
 .button
     height: 71px
@@ -38,15 +72,48 @@
     border-radius: 10px
     border: 0
     background-color: $primary-color
+    +center
+.btn
+    height: 71px
+    width: 207px
+    background-color: $primary-color
+    border: 0
+    +center
+    border-radius: 10px
+    text-align: center
 
 .buttonText
     color: $bg-white
     +roboto
+    font-size: 18px
+    margin-top: 12px
+    text-align: center
 .font
     color: $text-black
     font-size: 18px
     text-decoration: none
-    +roboto
+    margin-top: 16px
+
+.font_orange_bold
+    // +roboto
+    font-weight: 700
+    font-size: 18px
+    color: $primary-color
+    margin-top: 16px
+    margin-left: 10px
+
+
+.float
+    position: absolute
+    z-index: 1
+    justify-content: center
+    align-items: center
+    
+
+
+.centerm
+    +center
+
 .display
     display: inline
 
@@ -73,27 +140,50 @@
     padding-top: 30px
     width: 30%
     height: 100%
+    padding-left: 30px
+    padding-right: 30px
 
 .tab
-    background-color: pink
     display: flex
     justify-content: space-between
+
+.discover
+    +roboto
+    font-size: 32px
+    font-weight: 700
+
 
 .guch
     padding-top: 10px
 
-.search
-    +center
-    width: 80%
+.forSearch
+    margin-top: 45px
+    margin-bottom: 36px
+    justify-content: space-between
+    display: flex
     height: 83px
+    width: 100%
+    padding-right: 20px
     border-radius: 10px
-    border: 1
-    border-color: $text-black
-    background-color: $bg-footer
+    font-size: 18px
+    color: $text-search-gray
+    border: 0
+    background-color: $bg-white
+    align-items: center
+    filter: drop-shadow(0 2px 4px #DCE3EA)
+
+
+.search
+    height: 83px
+    width: 100%
+    border-radius: 10px
+    padding: 30px
+    font-size: 18px
+    color: $text-search-gray
+    border: 0
 
 .searchCenter
     +center
-    padding-top: 30px
 .input
     border: 0
 .centerl
@@ -101,8 +191,137 @@
     padding-left: 20px
 
 .more 
-    background-color: $bg-footer
+    display: flex
+    flex-direction: row
+    // height: 100px
+    justify-content: center
+    align-items: center
+.tum_desc
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    align-content: center
+
+// category css endees
+
+.category
+    padding-top: 74px
+    padding-left: 100px
+    padding-right: 100px
+    // height: 500px
+    // background-color: $bg-gray2
+.catCon
+    margin-right: 48px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+.mainCategory
+    width: 194px
+    height: 194px
+    background-color: $bg-gray1
+    border-radius: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.mainCategory:hover
+     background-color: $primary-color
+
+.categorytxt
+    padding-top: 18px
+    font-size: 24px
+    +roboto
+    color: $text-black
+
+.boldtext
+    font-weight: 800
+    font-size: 35px
+    // +roboto
+    // font-family: mont
+    color: $text-black
+    margin-bottom: 48px
+.newProduct
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-top: 57.5px
+    margin-bottom: 63px
+
+.NewProductsMain
+    width: 511px
+    height: 624px
+    border: 1px solid $text-gray
+    border-radius: 32px
+    margin-right: 31px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.price
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    height: 150px
+
+.productBtn
+    border: 0
+    background-color: $primary-color
+    height: 50px
+    width: 168px
+    border-radius: 8px
+
+.new
+    width: 64px
+    height: 64px
+    border-radius: 110px
+    background-color: $primary-color  
+    +center
+    position: absolute
+    z-index: 1
+    margin: 31.5px
+.off
+    width: 120px
+    height: 48px
+    border-radius: 8px
+    background-color: $primary-color  
+    +center
+    position: absolute
+    z-index: 1
+    margin: 31.5px
+.card
+    width: 375px
+    height: 589px
+    border: 1px solid $text-gray
+    border-radius: 32px
+
+.discountCard
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-right: 37px
+
+.hearthbg
+   width: 50px
+   height: 50px
+   +center 
+   background-color: $bg-gray3
+   border-radius: 8px
+   margin-right: 33px
+
+// logo
+
+.logo
     display: flex
     flex-direction: row
     align-items: center
-    justify-content: center
+    justify-content: space-around
+    +m 
+        flex-direction: column
+
+.logs
+    height: 71px
+    width: 224px
