@@ -10,8 +10,9 @@
     display: flex
     justify-content: space-between
     margin: 20px 0
-    .imageWrapper
+    .mediaImageWrapper
         margin-right: 36px
+        cursor: pointer
     .rigth
         display: flex
         align-items: center
@@ -27,9 +28,13 @@
     align-items: center
 
 .menuContainer
+    display: flex
+    align-items: center
+    justify-content: center
     ul
         list-style: none
         display: flex
+        margin: 0
         +roboto
         li
             margin-left: 36px
@@ -43,3 +48,4 @@
     align-items: center
     >span
         margin: 16px
+        cursor: pointer

@@ -10,10 +10,10 @@ const Header = () => {
     <header className={cn(styles.container)}>
       <div className={cn(styles.row1)}>
         <div>
-          <span className={cn(styles.imageWrapper)}><Image src="/svg/instagram.svg" height={20} width={20} alt="instagram" /></span>
-          <span className={cn(styles.imageWrapper)}><Image src="/svg/facebook.svg" height={20} width={20} alt="facebook" /></span>
-          <span className={cn(styles.imageWrapper)}><Image src="/svg/twitter.svg" height={20} width={20} alt="twitter" /></span>
-          <span className={cn(styles.imageWrapper)}><Image src="/svg/linkedin.svg" height={20} width={20} alt="linkedin" /></span>
+          <span className={cn(styles.mediaImageWrapper)}><Image src="/svg/instagram.svg" height={20} width={20} alt="instagram" /></span>
+          <span className={cn(styles.mediaImageWrapper)}><Image src="/svg/facebook.svg" height={20} width={20} alt="facebook" /></span>
+          <span className={cn(styles.mediaImageWrapper)}><Image src="/svg/twitter.svg" height={20} width={20} alt="twitter" /></span>
+          <span className={cn(styles.mediaImageWrapper)}><Image src="/svg/linkedin.svg" height={20} width={20} alt="linkedin" /></span>
         </div>
         <div className={cn(styles.rigth)}>
           <span className={cn(styles.iconWrapper)}><Image src="/svg/Call.svg" height={20} width={20} alt="call" /></span>
