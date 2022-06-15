@@ -1,5 +1,8 @@
-import React from 'react';
-const Header = ({ title }) => {
-    return <h1>{title ? title : 'Default title'}</h1>;
-  }
+import React from "react";
+import css from "@styles/example.module.sass";
+
+function Header(props) {
+  return <div className={css.NewProductsMain}></div>;
+}
+
 export default Header;
