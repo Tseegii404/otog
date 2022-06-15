@@ -1,0 +1,21 @@
+@import ./helper
+  
+.tabContainer
+  display: flex
+
+.tabItem
+  padding: 28px 45px
+  +roboto
+  font-size: 18px
+  z-index: 1
+  cursor: pointer
+.activeTab
+  border-bottom: 3px solid $primary-color
+
+.bottomLine
+  height: 1px
+  background: $text-gray
+  position: relative
+  top: -2px
+  z-index: 0
+  margin-bottom: 32px
